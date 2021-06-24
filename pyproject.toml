@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "reverse-image-search"
+version = "0.1.0"
+description = "Reverse Image Search"
+authors = ["Your Name <you@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+scikit-image = "^0.18.1"
+opencv-python = "^4.5.2"
+joblib = "^1.0.1"
+tabulate = "^0.8.9"
+
+[tool.poetry.dev-dependencies]
+black = "^21.6b0"
+mypy = "^0.902"
+pytest = "^6.2.4"
+pytest-cov = "^2.12.1"
+pre-commit = "^2.13.0"
+types-tabulate = "^0.1.1"
+
+[tool.poetry.scripts]
+reverse_image_search = "reverse_image_search.cli:cli"
+
+[tool.mypy]
+ignore_missing_imports = true
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
