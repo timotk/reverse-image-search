@@ -3,6 +3,7 @@ name = "reverse-image-search"
 version = "0.2.0"
 description = "Reverse Image Search"
 authors = ["Your Name <you@example.com>"]
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
