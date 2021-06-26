@@ -18,8 +18,9 @@ def test_load_image(image_path):
 
 def test_walk(image_path):
     iterator = search.walk(image_path)
-    assert next(iterator) == image_path / "hills-2836301_1920_thumbnail.jpg"
-    assert next(iterator) == image_path / "hills-2836301_1920.jpg"
+    items = sorted(list(iterator))  # order differs per OS
+    assert (image_path / "hills-2836301_1920.jpg") in items
+    assert (image_path / "hills-2836301_1920_thumbnail.jpg") in items
 
 
 def test_resize_image():

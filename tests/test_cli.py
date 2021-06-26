@@ -18,10 +18,11 @@ def test_cli():
     assert output_lines[2] == "- in: images"
     assert output_lines[3] == "- filetypes: ['.jpg', '.jpeg']"
     assert output_lines[4] == "- threshold: 0.9"
-    assert output_lines[-5:-1] == [
+    assert output_lines[-6:-1] == [
         "filepath                                 similarity",
         "---------------------------------------  ------------",
         "images/hills-2836301_1920_thumbnail.jpg  100%",
+        "images/hills-2836301_1920_3x.jpg         99%",
         "images/hills-2836301_1920.jpg            99%",
     ]
 
